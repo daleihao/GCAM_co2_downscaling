@@ -40,6 +40,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <iomanip>  
 
 #include "util/base/include/auto_file.h"
 #include "../include/aspatial_data.h"
@@ -93,7 +94,7 @@ double ASpatialData::readSpatialData(std::string aFileName, bool aHasLatLon, boo
         
         if ( aHasLatLon ) {
             double lon;
-            int lat;
+            double lat;
             
             // Parse longitude
             getline(iss, token, ' ');
@@ -187,7 +188,7 @@ void ASpatialData::writeSpatialData(std::string aFileName, bool aWriteID) {
         if( aWriteID ) {
             oFile << mLonVector[i] << "," << mLatVector[i] << "," << mIDVector[i] << ",";
         }
-        oFile << mValueVector[i] << endl;
+        oFile << scientific << setprecision(13) << mValueVector[i] << endl;
     }
     oFile.close();
     

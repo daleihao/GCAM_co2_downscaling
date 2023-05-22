@@ -49,7 +49,8 @@ public:
                                 double *gcamoco2airhijan, double *gcamoco2airhifeb, double *gcamoco2airhimar, double *gcamoco2airhiapr,
                                 double *gcamoco2airhimay, double *gcamoco2airhijun, double *gcamoco2airhijul, double *gcamoco2airhiaug,
                                 double *gcamoco2airhisep, double *gcamoco2airhioct, double *gcamoco2airhinov, double *gcamoco2airhidec,
-                                std::string aBaseCO2SfcFile, double *aBaseCO2EmissSfc, std::string aBaseCO2AirFile, double *aBaseCO2EmissAir,
+                                std::string aBaseCO2SfcFile, std::string aBaseCO2AirFile, std::string aGCAMBaseCO2EmisFile,
+                                std::string aMappingFile,
                                 int *aNumLon, int *aNumLat, bool aWriteCO2, int *aCurrYear);
     void finalizeGCAM();
     int gcamStartYear;

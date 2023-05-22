@@ -107,7 +107,7 @@ int main( ) {
     int* NUM_IAC2ELM_LANDTYPES = &numLT;
     int numES = 2;
     int* NUM_EMISS_SECTORS = &numES;
-    int numER = 1;
+    int numER = 32;
     int* NUM_EMISS_REGIONS = &numER;
     int numEG = 1;
     int* NUM_EMISS_GASES = &numEG;
@@ -349,6 +349,7 @@ int main( ) {
                                       gcamoco2airhimay, gcamoco2airhijun, gcamoco2airhijul, gcamoco2airhiaug,
                                       gcamoco2airhisep, gcamoco2airhioct, gcamoco2airhinov, gcamoco2airhidec,
                                       BASE_CO2_SURFACE_FILE, BASE_CO2EMISS_SURFACE, BASE_CO2_AIRCRAFT_FILE, BASE_CO2EMISS_AIRCRAFT,
+                                      ELM2GCAM_MAPPING_FILE,
                                       NUM_LON, NUM_LAT, WRITE_CO2, YEAR);
         }
         
